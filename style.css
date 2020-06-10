@@ -1,0 +1,742 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /*color: to be defined;*/
+    margin: auto 0;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2, h3{
+    font-family: 'EB Garamond', serif;
+    letter-spacing: .1rem;
+}
+.maiusc{
+    font-size: 1.4em;
+}
+
+.foot:before {
+    height: 3.8rem;
+    margin-top: -5rem;
+    content: "";
+    display: block;
+}
+#right{
+   margin-right:4em;
+}
+#left{
+   margin-left:4em;
+   padding-left:3em;
+   padding-right:3em;
+}
+
+.b{
+     border-right: 4em solid rgba(231, 227, 221, 0.7);
+     border-left: 4em solid rgba(231, 227, 221, 0.7);
+     border-top: 2em solid rgba(231, 227, 221, 0.7);
+     border-bottom: 2em solid rgba(231, 227, 221, 0.7);
+}
+
+
+/*--- Navbar --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: #DC143C;
+}
+.navbar-dark{
+    background-color: #DC143C;
+}
+.navbar-brand {
+    text-transform: capitalize;
+    height: 1.9rem;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 6px black;
+}
+
+.navbar-nav {
+    padding-right: .7rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+    text-shadow: 2px 2px 6px black;
+
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgb(228, 143, 160);
+    
+}
+
+#color {
+    color:white;
+}
+
+/*--- Slider --*/
+
+
+
+.Home {
+    position: absolute;
+    top:35%;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.Home h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    color: rgba(255, 255, 255, 0.911);
+    text-shadow: .4rem .4rem .9rem black;
+    padding-bottom: 1rem;
+}
+
+.Home h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: .5rem .5rem 1rem black;
+    padding-bottom: 1.6rem;
+    color:rgba(255, 255, 255, 0.911);
+    font-variant: small-caps;
+}
+.parallax{
+    background-color:rgb(240, 240, 240);
+    height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-shadow: 2px 2px 6px lightpink;
+}
+
+#evt{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.red a:link{
+    color:crimson;
+}
+.red a:hover{
+    color:crimson;
+}
+.red a:visited{
+    color:crimson;
+}
+/*--- Overview Section --*/
+
+.d{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#doc{
+
+    color: black;
+    text-shadow: 2px 2px 6px red;
+    position:relative;
+}
+#doc:after{
+ 
+
+        content: "";
+        background: url("images/writ.JPG");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1; 
+        filter: sepia(20%);
+
+      
+}
+
+#Progetto{
+    
+
+
+    color: black;
+    text-shadow: 2px 2px 6px black;
+    padding-top: 5.3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom:0.5em;
+    position:relative;
+
+
+}
+#Progetto:after{
+
+        content: "";
+        background: url("images/storia.JPG");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        filter: sepia(20%);
+        padding-bottom:0.5em;
+
+      
+}
+
+#EVT{
+
+    border-color: #DC143C;
+    border-width: 5rem;
+    border-radius: 0.5rem ;
+
+}
+
+.narrow {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.btn-md {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 6px black;
+}
+.container{
+position: relative;
+
+}
+#evt{
+    width: 50%;
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+footer {
+    color: white;
+    margin-top: 1.3em;
+    font-size: 1rem;
+
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+}
+footer a:hover{
+    color: lightcoral;
+
+}
+footer a:link{
+    color: white;
+    text-decoration: underline;
+
+}
+
+footer a:visited {
+    color:lightpink;
+  }
+
+hr.socket {
+    border-top: .1rem solid white;
+    width: 100%;
+    margin: 0.5rem;
+}
+.credits{
+    background-color: rgba(231, 227, 221, 0.7);
+    margin-left:5em;
+    margin-right: 10em;
+}
+#Credits h1{
+    color: #DC143C;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 0.5rem;
+}
+#Credits h2{
+    color: black;
+    font-size:1.3rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+#Credits p{
+    color: rgb(31, 28, 28);
+    font-size:1rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    font-size: 1.2em;
+}
+#Credits a:link{
+    color: #DC143C;
+}
+
+#Credits a:visited {
+    color:crimson;
+  }
+#Credits a:hover {
+    color:crimson;
+  }
+#Documentation a:link{
+    color: #DC143C;
+}
+
+#Documentation a:visited {
+    color:crimson;
+  }
+#Documentation a:hover {
+    color:crimson;
+  }
+
+#Documentation p{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    color: rgb(31, 28, 28);
+}
+#Documentation li{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    color: rgb(31, 28, 28);
+    font-size: 1.2em;
+    padding-bottom:0.4em
+}
+#Documentation h1{
+    color: #DC143C;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 0.5rem;
+}
+#Documentation h2{
+    color: black;
+    font-size:1.3rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+#Documentation h3{
+    color: black;
+    font-size:1rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+#Documentation p {
+    font-weight:normal;
+    font-size: 1.2em;
+}
+/*  #Documentation ul{
+    list-style-type: none;
+}*/
+#Documentation ol{
+    list-style-type: upper-roman;
+}
+#left{
+    margin-left:0em;
+}
+#right{
+    margin-right:0em;
+}
+.container-fluid{
+    width: 90% !important;
+    margin-right:2em !important;
+    padding: 3em !important;
+}
+
+@media screen and (min-width:769px) and (max-width: 1199px) {  
+    .Home{
+        top: 20%;
+    }
+    .Home h1 {
+        font-size: 3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .Home h3 {
+        font-size: 2rem;
+        padding-bottom: 1.2rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    .btn-md {
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .25rem;
+    }
+    .narrow h1 {
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+    footer{
+        font-size:100%;
+    }
+
+    #Credits h1{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 1.5rem;;
+    }
+    
+    #Credits p{
+        font-size: 1rem
+    }
+    #Documentation h1{
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+    }
+   
+    #Documentation h2{
+        font-size: 1.5rem;;
+    }
+    #Documentation h3{
+        font-size: 1.2rem;;
+    }
+    
+    #Documentation p{
+        font-size: 1rem
+    }
+
+    #doc{
+        height:40%;
+    }
+    #Progetto{
+    height:120%;
+ 
+    padding-top: 2em;
+    }
+    p{
+        font-size:95%;
+    }
+    .d{
+        padding-left: 0em !important;
+        padding-right:0em !important;
+        padding-top: 3em;
+        font-size: 95%;
+    }
+    #evt{
+        width: 80%;
+    }
+    .b{
+       border-left: 1em;
+        border-right: 1em;
+    }
+    .footer{
+        margin-top:1.9em;
+    }
+    .credits{
+        margin: 0em;
+    }
+}
+
+/*--- Media Queries --*/
+@media (max-width: 768px) {
+    .Home{
+        top: 30%;
+    }
+    .Home h1 {
+        font-size: 2rem;
+        letter-spacing: .15rem;
+        padding-bottom: .7rem;
+    }
+    .Home h3 {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+    }
+    .btn-md {
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .15rem;
+        margin-left:0.2em !important;
+    }
+    .narrow h1 {
+        font-size: 95%;
+    }
+    h3{
+        font-size: 95%;
+    }
+
+    #Credits h1{
+        font-size:95%;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 95%;
+    }
+    
+    #Credits p{
+        font-size: 95%;
+    }
+    #Documentation h1{
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+   
+    #Documentation h2{
+        font-size: 95%;
+    }
+    #Documentation h3{
+        font-size: 95%;
+    }
+    
+    #Documentation p{
+        font-size: 95%;
+    }
+    #Documentation li{
+        font-size: 95%;
+    }
+    #doc{
+        height:30%;
+    }
+    p{
+        font-size:95%;
+    }
+    #Progetto{
+        padding-top:2em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .d{
+        padding-left: 0em !important;
+        padding-right:0em !important;
+        padding-top: 0em;
+         font-size: 95%;
+    }
+    .b{
+        border-left: 2em;
+        border-right: 2em;
+    }
+    .footer{
+        margin-top:1.6em;
+    }
+    .credits{
+        margin: 0em;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .Home{
+        top: 15%;
+    }
+    .Home h1 {
+        font-size: 100%;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .Home h3 {
+        font-size: 95%;
+        padding-bottom: .8rem;
+        letter-spacing: .15rem;
+    }
+    .btn-lg {
+        font-size: .9rem;
+        letter-spacing: .10rem;
+    }
+    .btn-md{
+        font-size: .9rem;
+        letter-spacing: .10rem;
+    }
+    #center{
+        font-size: 0.9rem;
+        letter-spacing: .10rem;
+        margin-right: 0.5em;
+
+    }
+    .narrow h1 {
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    footer h3{
+        font-size: 0.8rem;
+    }
+    #Credits h1{
+        font-size: 95%;
+        padding-bottom: 1rem;
+    }
+    #Credits h2{
+        font-size: 95%;
+    }
+    
+    #Credits p{
+        font-size: 75%;
+    }
+    #Documentation h1{
+        font-size: 100%;
+        padding-bottom: 1.5rem;
+    }
+    #Documentation h2{
+        font-size: 100%;
+    }
+    #Documentation h3{
+        font-size: 75%;
+    }
+    #Documentation p{
+        font-size: 95%;
+    }
+    #Documentation li{
+        font-size: 95%;
+    }
+    #doc{
+        height:40%;
+    }
+    p{
+        font-size:100%;
+    }
+    footer{
+        font-size:85%;
+    }
+    .d{
+        padding-left: 0em !important;
+        padding-right:0em !important;
+        padding-top: 0em;
+        font-size:100%;
+    }
+    .b{
+        border-left: 0em;
+        border-right: 0em;
+        font-size:95%;
+    }
+    #Progetto{
+        padding-top: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #Progetto:after{
+        opacity:0.3;
+    }
+    #doc:after{
+        opacity:0.3;
+    }
+    #left{
+    margin-left:0em;
+    font-size:70%;
+    left:70%;
+}
+    #right{
+    margin-right:0em;
+    font-size:70%;
+}
+#intro{
+    font-size:70%;
+}
+#center{
+    font-size:70%;
+    margin-right: 0.5em;
+}
+.credits{
+    margin: 0em;
+}
+}
+@media (min-width: 1200px) { 
+    .Home{
+        height: 30em;
+    }
+
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+.Home h1 {text-transform:capitalize !Important}
+.Home h3 {text-transform:capitalize !Important}
