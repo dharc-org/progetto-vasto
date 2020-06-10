@@ -96,24 +96,24 @@
    "namedEntitiesToHandle": [
       {
          "tagName": "persName",
-         "label": "Persons",
+         "label": "Persone",
          "available": true
       },
       {
          "tagName": "placeName",
-         "label": "Places",
+         "label": "Luoghi",
          "available": true
       },
       {
          "tagName": "date",
-         "label": "Dates",
+         "label": "Date",
          "available": false
       }
    ],
    "otherEntitiesToHandle": [
       {
          "tagName": "date",
-         "label": "Dates",
+         "label": "Date",
          "available": true,
          "color": "#ffecb3"
       },
