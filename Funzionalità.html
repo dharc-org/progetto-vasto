@@ -98,9 +98,7 @@ h3 {font-family: 'Bree Serif', serif; padding-top:1rem}
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#EVT">EVT</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link page-scroll" href="index.html#strumenti">Strumenti</a>
-                      </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link page-scroll active" href="index.html#doc">Documentazione</a>
                         </li>
@@ -124,7 +122,6 @@ h3 {font-family: 'Bree Serif', serif; padding-top:1rem}
                 <a href="#funzionalit-dell-edizione-diplomatica" class="list-group-item list-group-item-action">Funzionalità dell'edizione diplomatica</a>
                 <a href="#limitazioni-significative-dell-edizione-critica-vasto" class="list-group-item list-group-item-action">Funzionalità dell'edizione critica</a>
                 <a href="#lista-dei-tag-xml-tei-utilizzati-per-l-encoding-dell-edizione" class="list-group-item list-group-item-action">Lista dei tag XML/TEI utilizzati</a>
-                <a href="#KnowledgeSite" class="list-group-item list-group-item-action">Il Knowledge site</a>
 
               </div>
             </div>
@@ -247,33 +244,7 @@ h3 {font-family: 'Bree Serif', serif; padding-top:1rem}
                   </li>
                 </ul>
                 <p>Per ulteriori esempi ed informazioni consulta il file <code>data/pilot_proemio.xml</code>.</p>
-                <h2 id="KnowledgeSite">Il Knowledge Site</h2>
-                <p>Per migliorare l'esperienza dell'edizione e apportare una migliore contestualizzazione dei dati estratti dal testo sono stati utilizzati degli strumenti di visualizzazione. In particolare ci si è soffermati su tre livelli di conoscenza: tempo, spazio e personaggi. <br>
-                  L’idea è appunto quella di elaborare i dati per ogni livello, in moo tale che diano, quindi, la possibilità di avere una fruizione più completa delle named enities fornite da EVT (luoghi, date e personaggi) ci forniscono; nello specifico una mappa per lo spazio, una timeline per il tempo e una collezione per i personaggi.
-                </p><h3>LA TIMELINE</h3>
-                <p>Una timeline con le date più importanti è stata creata utilizzando il sistema <a href="https://timeline.knightlab.com/">Timeline Js</a>,  sviluppato dal Knight Lab  della Northwestern University.<br>
-                 Le date inserite sono state selezionate non solo tra quelle riportate quattordici libri della <em>Storio Fiorentina</em>, ma per una migliore analisi esse sono state comparate e ampliate con il contesto storico riportato nei manuali storici di <a ref="#VA">Von Albertini</a> e <a ref="#BB">Beonio-Brocchieri</a>.  <br>
-                La peculiarità di questo tool è che permette di visualizzare le date singolarmente una ad una, associandovi file multimediali (immagini, video, etc.) e descrizioni testuali.</p>
-                <h3>LA MAPPA</h3>
-                <p>In questa mappa sono state ripoortati tutti i luoghi di Firenze menzionati nella sezione analizzata della <em>Storia Fiorentina</em>. I luoghi identifiati in totale sono 24, divisi in cinque categorie o layers che possono essere abilitati o no alla visualizzazione: castelli, piazze/località, chiese, ponti e porte. <br>  Ogni categoria è indicata da un diverso marker personalizzato attraverso <a href="https://github.com/lvoogdt/Leaflet.awesome-markers">Leaflet Awesome Markers</a>. Cliccando sui marker, inoltre, è possibile aprire un pop up con un immagine e altre informazioni sul luogo (il link a DBPEDIA, VIAF o WIKIDATA), oltre al link diretto alle pagine della <em>Storia Fiorentina</em> in cui il luogo viene menzionato. <br> La mappa è stata sviluppata facdndo uso della open-source JavaScript library <a href="https://leafletjs.com/">Leaflet</a></p>
-                <h3>LA COLLEZIONE</h3>
-                <p>VaStoCollection è una collezione sviluppata tramite <a href="https://omeka.org/s/">Omeka S</a>, con lo scopo di raccogliere immagini e schede informative rigurdanti la <em>Storia Fiorentina </em>. Essa attualmente conta 3 set items: <b>Manoscritto RC4</b>, <b>Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi </b> e <b>Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina</b>.<br>
-                  L'item set <em>Manoscritto RC4</em> contiene e cataloga tutti i facsimiles del manoscritto RC4 utilizzati nell'edizione. Inoltre, ogni facsimile è associato a una riproduzione <a href="https://iiif.io/">IIF</a> dell'immagine stessa. <br>
-                  A questo proposito tutte le immagini sono state caricate su un server e gli Uniform Resource Identifier (URI) sono stati conformati a questo standard: <br>
-                   {scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}.<br>
-                    Le riproduzioni IIF possono essere manipolate attraverso questo stesso URI seguendo le istruzioni disponibili nel<a href="https://iiif.io/api/image/3.0/#4-image-requests"> sito ufficiale</a>.<br>
-                  La sottocollezone <em>Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi</em>, è invece composta dalle schede biografiche dei vari personaggi menzionati nel testo e poi connessi a un ritratto con conseguente descrizione di esse riportato nell'item set <em>Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina</em>. <br>
-              Ogni elemento o item in questa collezione è descritto usando le ontologie: <a href="https://www.dublincore.org/">Dublin Core (DC)</a>, <a href="http://xmlns.com/foaf/spec/">Friend of a Friend (FOAF)</a>, <a href="https://d-nb.info/standards/elementset/gnd">Gemeinsame Normdatei (GND)</a>, <a href="http://www.cidoc-crm.org/">CIDOC CRM</a> e <a href="https://bibliontology.com/">Bibliographic Ontology Specification (BIBO)</a>.
-          </p>
-          <h3>Bibliografia</h3>
-          <p>
-            <ul>
-              <li id="VA">Von Albertini Rudolf (1970), Firenze dalla repubblica al principato. Storia e coscienza politica, tr. it., Einaudi, Torino.</li>
-              <li id="BB">Beonio-Brocchieri Vittorio, Colarizi Simona, Martinotti Guido (2006), La memoria e il tempo. Dal basso Medievo all'età contemporanea. (Vol. 1), edited by Cantarella Eva, Guidorizzi Giulio, Mondadori Education, Einaudi Scuola, Milano.</li>
-              <li>Tomasi Francesca (2016), Edizioni o archivi digitali? Knowledge sites e apporti disciplinari, in Edizioni Critiche Digitali. Digital Critical Editions. Comparing editions, Roma, Sapienza Università Editrice, 2016, pp. 129 - 136 [Chapter or essay]</li>
-              <li>Shillingsburg, Peter (2009), How Literary Works Exist: Convenient Scholarly Editions, In: Digital Humanities Quarterly 3 (3), http://www.digitalhumanities.org/dhq/vol/3/3/000054/000054.html, last access 03/02/2021.</li>
-            </ul>
-          </p>
+                
               </div>
             </div>
             <!-- /#page-content-wrapper -->
