@@ -76,4 +76,26 @@ Il progetto Vasto al momento, come già detto in precedenza, è da considerasi u
 * ```<app><lem @wit @hand></lem><rdg @cause @wit"> </rdg></app>```
 
 Per ulteriori esempi ed informazioni consulta il file ```data/pilot_proemio.xml```
+## Il Knowledge Site
+* Per migliorare l'esperienza dell'edizione e apportare una migliore contestualizzazione dei dati estratti dal testo sono stati utilizzati degli strumenti di visualizzazione. In particolare ci si è soffermati su tre livelli di conoscenza: tempo, spazio e personaggi. 
+* L’idea è appunto quella di elaborare i dati per ogni livello, in moo tale che diano, quindi, la possibilità di avere una fruizione più completa delle named enities fornite da EVT (luoghi, date e personaggi) ci forniscono; nello specifico una mappa per lo spazio, una timeline per il tempo e una collezione per i personaggi.
+### LA TIMELINE
+* Una timeline con le date più importanti è stata creata utilizzando il sistema ![Timeline Js](https://timeline.knightlab.com/),  sviluppato dal Knight Lab  della Northwestern University.
+* Le date inserite sono state selezionate non solo tra quelle riportate quattordici libri della  ```Storio Fiorentina ```, ma per una migliore analisi esse sono state comparate e ampliate con il contesto storico riportato nei manuali storici di Von Albertini e Beonio-Brocchieri.
+* La peculiarità di questo tool è che permette di visualizzare le date singolarmente una ad una, associandovi file multimediali (immagini, video, etc.) e descrizioni testuali.
+### LA MAPPA
+* In questa mappa sono state ripoortati tutti i luoghi di Firenze menzionati nella sezione analizzata della  ```Storia Fiorentina ```. I luoghi identifiati in totale sono 24, divisi in cinque categorie o layers che possono essere abilitati o no alla visualizzazione: castelli, piazze/località, chiese, ponti e porte.  *   Ogni categoria è indicata da un diverso marker personalizzato attraverso ![Leaflet Awesome Markers](https://github.com/lvoogdt/Leaflet.awesome-markers"). Cliccando sui marker, inoltre, è possibile aprire un pop up con un immagine e altre informazioni sul luogo (il link a DBPEDIA, VIAF o WIKIDATA), oltre al link diretto alle pagine della  ```Storia Fiorentina ``` in cui il luogo viene menzionato.
+ * La mappa è stata sviluppata facdndo uso della open-source JavaScript library![Leaflet](https://leafletjs.com/)
+### LA COLLEZIONE
+* VaStoCollection è una collezione sviluppata tramite ![Omeka.net](https://omeka.net/), con lo scopo di raccogliere immagini e schede informative rigurdanti la  ```Storia Fiorentina  ```. Essa attualmente conta 3 set items: Manoscritto RC4>, Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi e Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina.
+* L'item set  ```Manoscritto RC4 ``` contiene e cataloga tutti i facsimiles del manoscritto RC4 utilizzati nell'edizione. Inoltre, ogni facsimile è associato a una riproduzione ![IIF](https://iiif.io/) dell'immagine stessa. Per questo proposito tutte le immagini son state caricate su un server e gli Uniform Resource Identifier (URI) sono stati conformati a questo standard: {scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}. Le riproduzioni IIF possono essere manipolate attraverso questo stesso URI seguendo le istruzioni disponibili nel![sito ufficiale](https://iiif.io/api/image/3.0/#4-image-requests). 
+* La sottocollezone  ```Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi ```, è invece composta dalle schede biografiche dei vari personaggi menzionati nel testo e poi connessi a un ritratto con conseguente descrizione di esse riportato nell'item set  ```Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina ```.
+* Ogni elemento o item in questa collezione è descritto usando l'ontologia ![Dublin Core](https://www.dublincore.org/).
+          
+### Bibliografia
+          
+* Von Albertini Rudolf (1970), Firenze dalla repubblica al principato. Storia e coscienza politica, tr. it., Einaudi, Torino.
+*  Beonio-Brocchieri Vittorio, Colarizi Simona, Martinotti Guido (2006), La memoria e il tempo. Dal basso Medievo all'età contemporanea. (Vol. 1), edited by Cantarella Eva, Guidorizzi Giulio, Mondadori Education, Einaudi Scuola, Milano.
+*  Tomasi Francesca (2016), Edizioni o archivi digitali? Knowledge sites e apporti disciplinari, in Edizioni Critiche Digitali. Digital Critical Editions. Comparing editions, Roma, Sapienza Università Editrice, 2016, pp. 129 - 136 [Chapter or essay]
+*  Shillingsburg, Peter (2009), How Literary Works Exist: Convenient Scholarly Editions, In: Digital Humanities Quarterly 3 (3), http://www.digitalhumanities.org/dhq/vol/3/3/000054/000054.html, last access 03/02/2021.
 

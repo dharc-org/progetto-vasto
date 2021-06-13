@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strumenti di Visualizzazione</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico"/>
+    <!--    <link rel="stylesheet" href="css/fixed.css">-->
+    <style>
+        .navbar {
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+        }
+        .btn-secondary{
+            background-color: #DC143C !important;
+            opacity: 0.9 !important;
+            border-color: #DC143C !important ;
+        }
+        .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-column-gap: 5px;
+}
+.grid-item {
+
+  padding: 2px;
+  
+  text-align: center;
+  width: 100% !important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+h1{
+    color: #DC143C;
+    font-size:3rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 0.5rem;
+}
+h3{
+    font-size: 0.8rem;
+    font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+@media screen and (min-width:769px) and (max-width: 1199px) { 
+    #S{
+        margin: 0em 0em 0em 0em !important;
+        padding: 0em !important;
+      
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto ;
+        padding: 5px;
+        grid-column-gap: 0px;
+    }
+} 
+@media (max-width: 768px) {
+    #S{
+        margin: 0em 0em 0em 0em !important;
+        padding: 0em !important;
+      
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto ;
+        padding: 5px;
+        grid-column-gap: 0px;
+    }
+}
+@media (max-width: 575px) {
+    #S{
+        margin: 0em 0em 0em 0em !important;
+        padding: 0em !important;
+       
+      
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto ;
+        padding: 5px;
+        grid-column-gap: 0px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color: #DC143C;">
+            <a class="navbar-brand" href="index.html"><img src="images/favicon.svg" alt="" style="width:15%;"/>VaSto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Progetto">Il Progetto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#EVT">EVT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#strumenti">Strumenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#doc">Documentazione</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<div class="col-12 narrow" id="S">
+<h1>Strumenti di Visualizzazione</h1>
+<section class="strumenti" id="Credits">
+    
+    
+    <div class="grid-container">
+
+        <div class="grid-item w-100 my-auto text-center text-lg-left" >
+            <h2>La Timeline</h2>
+            <p> In qusta timeline sono state raccolte le date più importanti per la contestualizzazione della narrazione e della stesura della <em>Storia Fiorentina</em>. Ogni data è stata associata a un immmagine e a una piccola descrizione dell'evento a cui essa si riferisce.<br> Lo strumento uilizzato per la visualizzazione è <a href="https://timeline.knightlab.com/" target="_blank">TimelineJS</a>, sviluppata dal Knight Lab della Northwestern University.</p><h3>Bibliografia</h3><p style="font-size: 0.7rem;">Le date sono state selezionate facendo riferimento alla <em>Storia Fiorentina</em> comparandole con vari manuali di storia tra cui:<br>
+                Von Albertini Rudolf (1970), Firenze dalla repubblica al principato. Storia e coscienza politica, , tr. it., Einaudi, Torino.<br>
+                Beonio-Brocchieri Vittorio, Colarizi Simona, Martinotti Guido (2006), La memoria e il tempo. Dal basso Medievo all'età contemporanea. (Vol. 1), edited by Cantarella Eva, Guidorizzi Giulio, Mondadori Education, Einaudi Scuola, Milano.</p>
+            
+       
+        </div>
+        <div class="grid-item w-100 my-auto text-center text-lg-left">
+             <div class="container">
+            <img class="img-fluid" src="images/Timeline.JPG" >
+            <a id="center" class="btn btn-secondary btn-md" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1REB4qs5FSg5ryR4YchJ7BNtxPlI__pBjLwr1kkxMgsk&font=Default&lang=en&initial_zoom=2&height=650" target="_blank"style="color: white !important;">TIMELINE </a>
+        </div>
+        </div>
+    
+            <div class="grid-item w-100 my-auto text-center text-lg-left ">
+            <div class="container">
+           <img class="img-fluid" src="images/map.JPG" >
+           <a id="center" class="btn btn-secondary btn-md" href="https://milenacorbellini.github.io/VaStoMap/" target="_blank"style="color: white !important;">La Mappa </a>
+
+        </div> 
+        
+        </div>
+        <div class="grid-item w-100 my-auto text-center text-lg-right"><h2>La mappa</h2> <p>In questa mappa sono state riportati tutti i luoghi di Firenze menzionati nella sezione analizzata della <em>Storia Fiorentina</em>. I luoghi identifiati in totale sono 24, divisi in cinque categorie o layers: castelli, piazze/località, chiese, ponti e porte. <br>  Attiva e disattiva i layers per cercare specifche tipologie di strutture. Cliccando sui marker potrai visualizzare un immagine e altre informazioni sul luogo, oltre al link diretto alle pagine della <em>Storia Fiorentina</em> in cui il luogo viene menzionato. <br> La mappa è stata sviluppata facdndo uso della open-source JavaScript library <a href="https://leafletjs.com/">Leaflet</a>.</p> <h3>Disclaimer</h3><p style="font-size: 0.7rem;">Tutte le immagini utilizzate sono sotto licenza <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a> o <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>.</p></div>
+        <div class="grid-item  w-100 my-auto text-center text-lg-left">
+            <h2>La collezione</h2><p>VaStoCollection è una collezione sviluppata tramite <a href="https://www.omeka.net/">Omeke.net</a>, con lo scopo di raccogliere immagini e schede informative rigurdanti la <em>Storia Fiorentina </em>. Essa attualmente conta 3 set items: <b>Manoscritto RC4</b>, <b>Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi </b> e <b>Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina</b>.<br>
+        L'item set <em>Manoscritto RC4</em> contiene e cataloga tutti i facsimiles del manoscritto RC4 utilizzati nell'edizione. Inoltre, ogni facsimile è associato a una riproduzione <a href="https://iiif.io/">IIF</a> dell'immagine stessa. Le riproduzioni IIF possono essere manipolate attraverso l'URI seguendo le istruzioni disponibili nel<a href="https://iiif.io/api/image/3.0/#4-image-requests"> sito ufficiale</a>.<br>
+        La sottocollezone <em>Personaggi storici citati nella Storia Fiorentina di Benedetto Varchi</em>, è invece composta dalle schede biografiche dei vari personaggi menzionati nel testo e poi connessi a un ritratto con conseguente descrizione di esse riportato nell'item set <em>Ritatti dei Personaggi Storici menzionati nella Storia Fiorentina</em>. <br>
+    Ogni elemento o item in questa collezione è descritto usando l'ontologia <a href="https://www.dublincore.org/">Dublin Core</a>.</p></div>
+<div class="grid-item w-100 my-auto text-center text-lg-left">
+            <div class="container">
+           <img class="img-fluid" src="images/Collezione.JPG" >
+           <a id="center" class="btn btn-secondary btn-md" href="https://archivevasto.omeka.net/" target="_blank"style="color: white !important;"> VaStoCollection </a>
+            </div>
+        </div>   
+    </div>
+    
+</section>
+</div>
+
+
+<!--- Start Contact Section -->
+<section class="foot">
+    <footer>
+        <div class="row justify-content-center pt-1" style="background-color:#DC143C;">
+
+            <div class="col-md-5 text-center" style="font-size:80%">
+                <h3>Digital Humanities Advanced Research Centre (/DH.arc)</h3>
+                <p>Questo progetto e l'edizione digitale sono parte delle attività di ricerca del Digital Humanities Advanced Research Centre <a href="https://centri.unibo.it/dharc/en/research/projects-at-dh-arc">(/DH.arc)</a></p>
+                <h3>Contatti</h3>
+                <p>Università di Bologna<br>
+                    Dipartimento di Filologia Classica e Italianistica <a href="https://ficlit.unibo.it/it">(FICLIT)</a><br>
+                    Via Zamboni 32<br>
+                    40126 Bologna, Italia</p>
+                <p><strong>Email:</strong> <a class="email-link" href="mailto:dharc@live.unibo.it">dharc@live.unibo.it</a></p>
+                <img src="images/unibologo.svg" style="width:15%; height:auto; margin-bottom:1%" alt=""/>
+
+                <p style="font-size:80%"><a href="https://upload.wikimedia.org/wikipedia/commons/archive/b/ba/20170728095613%21Nuremberg_chronicles_-_FLORENCIA.png">L'immagine 1</a> <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png#filehistory">(versione 21:46, 20/06/2006)</a> utilizzata nella homepage del sito è una scannerizzazione di "Schedelsche Weltchronik" (1493) dal libro originale di Michel Wolgemut, Wilhelm Pleydenwurff (Testo: <a href="https://commons.wikimedia.org/wiki/Hartmann_Schedel">Hartmann Schedel)</a>. Questa immagine è protetta dalla licenza consuntabile al seguente <a href="https://commons.wikimedia.org/wiki/File:Nuremberg_chronicles_-_FLORENCIA.png">link.</a></p>
+            </div>
+
+            <hr class="socket">
+            <p>&copy;2020 <a href="https://centri.unibo.it/dharc/en">/DH.arc</a>- VASTO | DOI:    | <a href="credits.html">Credits</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.it"><img alt="Licenza Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png" /></a><br />
+            </p>
+
+        </div> <!-- End of Row -->
+    </footer>
+</section>
+<!--- End Contact Section -->
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+<!--- End of Script Source Files -->
+</body>
+</html>
